@@ -1,0 +1,29 @@
+[{
+    "id":"0",
+    "category": "企業",
+    "name":"Front-end development",
+    "cover":"./static/cover07-min.jpg",
+    "color":"#006dbb",
+    "preview":"",
+    "link":"http://www.alphanetworks.com/"
+  },
+  {
+    "id":"1",
+    "category": "建築企業",
+    "name":"Front-end development",
+    "cover":"./static/cover08-min.jpg",
+    "color":"#111",
+    "preview":"",
+    "link":"http://feng-group.com.tw/"
+  },
+  {
+    "id":"2",
+    "category": "餐飲",
+    "name":"Front-end development",
+    "cover":"./static/cover09-min.jpg",
+    "color":"#111",
+    "preview":"",
+    "link":"http://www.sukiyaki.kitaro.tw/"
+  }
+  
+]
