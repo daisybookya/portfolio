@@ -130,7 +130,7 @@ header{
   //float: right;
   position: fixed;
   top: 7.5vh;
-  right: 2vw;
+  right: 1.5vw;
   z-index: 99995;
   //margin-top: 15px;
   cursor: pointer;

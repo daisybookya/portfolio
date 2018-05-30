@@ -28,7 +28,7 @@
             :key="m"
             :visible="visible[m]"
             :name="m"
-            :spacing="300"
+            :spacing="600"
             @isVisible="markerVisible"
             @isNotVisible="markerNotVisible"
           ></scroll-marker>
@@ -51,7 +51,7 @@ export default {
     return{
        markers: ['first', 'second', 'third', 'fourth'],
        addAnimate: {
-         "first":false,
+         "first":true,
          "second":false,
          "third":false,
          "fourth":false
@@ -71,7 +71,7 @@ export default {
         }
     },
     markerVisible(name) {
-      //console.log(`marker ${name} is visible!`)
+      console.log(`marker ${name} is visible!`)
       this.currentlyShowing = name;
       var vm = this;
       if(this.currentlyShowing === name){
@@ -104,7 +104,7 @@ export default {
   width: 90vw;
   position: fixed;
   top: 7.5vh;
-  left: 5vw;
+  left: 4vw;
 }
 .eachpart{
   width: 100%;
@@ -118,7 +118,7 @@ export default {
   
 }
 .sub-container{
-  padding-bottom: 300px;
+  padding-bottom: 600px;
 }
 
 @keyframes fade-in {

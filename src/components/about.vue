@@ -65,7 +65,7 @@ $pic : 250px;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: $pic;
-  background: url('./../assets/about.png') no-repeat;
+  background: url('/static/about.png') no-repeat;
   background-size: cover;
   background-position-y: 100%;
 }
