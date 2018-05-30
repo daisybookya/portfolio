@@ -53,19 +53,7 @@ export default {
   top: $top;
   left: $left;
 }
-.part-xl{
-    width: 50%;
-    height: 50vh;
-    @include abso(20%,25% );
-}
-.part-m{
-    width: 30%;
-    height: 40vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    @include abso(25%,15% );
-}
+
 .title{
     color: #fff;
     margin-top: -20px;

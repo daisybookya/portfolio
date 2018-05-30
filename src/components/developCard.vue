@@ -63,4 +63,10 @@ export default {
       
   }
 }
+@media screen and (max-width: 700px) and (orientation: portrait){
+  .card{
+    width: 90%;
+    margin: 3% 5%;
+  }
+}
 </style>

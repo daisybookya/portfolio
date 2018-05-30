@@ -65,7 +65,7 @@ $pic : 250px;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: $pic;
-  background: url('../assets/about.png') no-repeat;
+  background: url('./../assets/about.png') no-repeat;
   background-size: cover;
   background-position-y: 100%;
 }
@@ -83,5 +83,20 @@ $pic : 250px;
     width: 100%;
   }
 }
-
+@media screen and (max-width: 768px)and (orientation:  landscape ){
+    $pic : 200px;
+.picture{
+    width: $pic;
+    height: $pic;
+    border-radius: $pic;
+  }
+  .main{
+    p{
+      padding: 0;
+    }
+  }
+  .container{
+    transform: translateY(-50%);
+  }
+}
 </style>

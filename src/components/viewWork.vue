@@ -215,7 +215,7 @@ export default {
     width: 65%;
     padding-top: 30px;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: -40%;
     //background: url('../assets/knit.png');
     background:#eee;
@@ -270,6 +270,20 @@ export default {
         }
         100% {
             left:-101%;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+  .works-page{
+        &.active{
+
+            .project-view{
+                left: auto;
+                right: 0;
+            }
+            .btn-close{
+                right: 5px;
+            }
         }
     }
 }

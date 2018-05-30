@@ -38,6 +38,7 @@ export default {
 }
 .footer{
   padding-top: 10px;
+  padding-right: 10px;
   float: right;
   font-size: 13px;
 

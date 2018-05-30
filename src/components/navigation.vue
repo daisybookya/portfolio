@@ -97,9 +97,9 @@ header{
   }
 }
 .logo{
-  position: absolute;
+  position: fixed;
   top: 4.5vh;
-  left: -20px;
+  left: 8vh;
   z-index: 255;
   //float: left;
   //animation:mymove 5s 1 5s normal;
@@ -130,8 +130,8 @@ header{
   //float: right;
   position: fixed;
   top: 7.5vh;
-  right: 3vh;
-  z-index: 355;
+  right: 2vw;
+  z-index: 99995;
   //margin-top: 15px;
   cursor: pointer;
   
@@ -177,6 +177,15 @@ header{
         transform: translateY(-40%);
         h4{
           opacity: 1;
+        }
+    }
+
+}
+@media screen and (max-width: 768px)and (orientation:  landscape ){
+    .logo,.menu{
+        top: 6vh;
+        h4{
+          opacity: 0;
         }
     }
     

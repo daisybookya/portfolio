@@ -154,18 +154,35 @@ $size:290px;
 }
 
 @media screen and (max-width: 1024px){
-  $size:260px;
+  $size:230px;
   .feature{
     width: $size;
     height: $size;
+    padding: 20px 0 10px 0;
     margin: 20px 5px;
     .feature-container{
+      h4{
+        margin-bottom: 0;
+        &:after{
+          margin: 10px auto 0 auto;
+        }
+      }
       ul{
         li{
           padding: 6px 0;
         }
       }
     }
+  }
+}
+@media screen and (max-width: 768px){
+  .service{
+    overflow-y: scroll;
+  }
+  .main{
+    position: relative;
+    top: auto;
+    transform: none;
   }
 }
 </style>

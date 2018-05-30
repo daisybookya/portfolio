@@ -109,7 +109,7 @@ background: linear-gradient(to right, rgb(231,195,141) 1%,rgb(215,234,168) 100%)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7c38d', endColorstr='#d7eaa8',GradientType=1 ); /* IE6-9 */
 
 }
-/*-----------------------------------------------------------*/
+/*---------------------------home--------------------------------*/
 .home-title{
   font-size: 3rem;
 }
@@ -120,4 +120,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7c38d', end
     margin: 5px 0;
     text-align: left;
   }
+}
+@mixin abso($top,$left){
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+.part-xl{
+    width: 50%;
+    height: 50vh;
+    @include abso(20%,30% );
+}
+.part-m{
+    width: 30%;
+    height: 40vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    @include abso(25%,20% );
+}
+@media screen and (max-width: 1300px){
+  .part-xl{
+    width: 65%;
+    @include abso(20%,25% );
+  }
+  .part-m{
+    width: 40%;
+    @include abso(25%,10% );
+  }
+}
+@media screen and (max-width: 768px){
+    
 }

@@ -31,7 +31,8 @@
         <div class="part-bottom">
           <p class="serif left">photoshop<br>illustrator<br>sketch<br>love<br></p>
           <p class="serif right">javascript<br>css<br>framework<br>brain<br></p>
-          <p class="font note">scroll down<br><i class="fas fa-long-arrow-alt-down"></i></p>
+          <p class="font note" v-if="isPad">design<br>x<br>code</p>
+          <p class="font note" v-else>scroll down<br><i class="fas fa-long-arrow-alt-down"></i></p>
         </div>
         
       </div>    
@@ -51,7 +52,7 @@ export default {
        blueList:['default','light','dark']
     }  
   },
-  props:['secAnimate'],
+  props:['secAnimate','isPad'],
   methods:{
     stopChange:function(){
       var vm=this;
@@ -203,5 +204,12 @@ $dotsize : 15px;
     top: 0;
     left: 0;
 }
-
+@media screen and (max-width: 768px){
+  .slogan{
+    font-size: 4rem;
+  }
+  .part-left .txts{
+    top: 45%;
+  }
+}
 </style>

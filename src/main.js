@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './style/reset.scss'
 import './style/general.scss'
-import './style/rwd.scss'
 
 Vue.config.productionTip = false
 
