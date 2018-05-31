@@ -176,8 +176,13 @@ header{
         top: 3.7vh;
         transform: translateY(-40%);
         h4{
-          opacity: 1;
+          display: none;
         }
+    }
+    header{
+      h1{
+        font-size: 1.5rem;
+      }
     }
 
 }

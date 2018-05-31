@@ -213,6 +213,7 @@ export default {
 }
 .project-view{
     width: 65%;
+    height: 85.5vh;
     padding-top: 30px;
     position: absolute;
     top: -1px;
@@ -235,7 +236,7 @@ export default {
     .img-container{
         clear: both;
         opacity: 0;
-        transition: all 2s ease-in;
+        transition: all 2.5s ease-in;
         img{
             margin: 20px auto;
             width: 80%;
