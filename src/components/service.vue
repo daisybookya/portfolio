@@ -1,5 +1,5 @@
 <template>
-<div class="service">
+<div class="service slide-run">
     <div class="main">
         <div class="feature" :class="{active : feature}">
           <div class="feature-container">
@@ -85,6 +85,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6c2dd', end
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  h4{
+    margin-bottom: 0;
+  }
 }
 .query{
   margin: 5% auto 0 auto;

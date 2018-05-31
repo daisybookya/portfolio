@@ -4,8 +4,8 @@
             <div class="content">
                     <ul class="serif descript ">
                         <li>Front-end development</li>
-                        <li>Web Design</li>
-                        <li>Identity</li>
+                        <li>Web design</li>
+                        <li>Identity design</li>
                     </ul>
 
                     <router-link :to="{ name: 'design'}" class="font btn-more"><span>MORE<i class="fas fa-long-arrow-alt-right"></i></span></router-link>

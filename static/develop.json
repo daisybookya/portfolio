@@ -1,6 +1,7 @@
 [{
     "id":"0",
     "category": "企業",
+    "type":"前端開發",    
     "name":"Front-end development",
     "cover":"./static/cover07-min.jpg",
     "color":"#006dbb",
@@ -10,6 +11,7 @@
   {
     "id":"1",
     "category": "建築企業",
+    "type":"前端開發",    
     "name":"Front-end development",
     "cover":"./static/cover08-min.jpg",
     "color":"#111",
@@ -19,6 +21,7 @@
   {
     "id":"2",
     "category": "餐飲",
+    "type":"前端開發",    
     "name":"Front-end development",
     "cover":"./static/cover09-min.jpg",
     "color":"#111",

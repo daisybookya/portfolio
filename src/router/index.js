@@ -52,7 +52,7 @@ export default new Router({
       name:'project',
       props: true,
       components: {
-        default:Design,
+        default:viewWork,
       }
     },
     

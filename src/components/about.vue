@@ -1,10 +1,11 @@
 <template>
-<div class="about">
+<div class="about slide-run">
   <designdefault title=about ></designdefault>
   <div class="main">
     <div class="container">
         <div class="picture" :style="{backgroundImage : 'url('+picture+')'}"></div>
-        <p class="font">daisy</p>
+        <p class="font bold">Sunday studio</p>
+        <p class="font">daisy,</p>
         <p class="font">a designer and front-end developer.</p>
         <p class="font">E-mail : daisybookya@gmail.com</p>
     </div>
@@ -55,7 +56,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3ccb3', end
   float:right;
   line-height: 24px;
   p{
-    padding: 10px;
+    padding: 5px;
+    &.bold{
+      font-weight: bold;
+    }
   }
 }
 $pic : 250px;

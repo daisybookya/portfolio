@@ -107,7 +107,20 @@ background: -moz-linear-gradient(left, rgb(231,195,141) 1%, rgb(215,234,168) 100
 background: -webkit-linear-gradient(left, rgb(231,195,141) 1%,rgb(215,234,168) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgb(231,195,141) 1%,rgb(215,234,168) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7c38d', endColorstr='#d7eaa8',GradientType=1 ); /* IE6-9 */
+}
 
+.slide-run{
+  animation:slide-run 1.5s 1;
+}
+@keyframes slide-run {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 /*---------------------------home--------------------------------*/
 .home-title{

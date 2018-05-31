@@ -1,15 +1,15 @@
 <template>
-<div class="design" :style="{backgroundImage : 'url('+picture+')'}">
+<div class="design slide-run" :style="{backgroundImage : 'url('+picture+')'}">
   <designdefault title=projects></designdefault>
   <div class="pro-list">
     <div class="list-container">
-        <develop-card v-for="works in developlist" :link="works.link" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.name" :card-color="works.color"></develop-card>
-        <router-link :to="{ name: 'project', params: { worksId: project.id , directPage : true }}"><design-card v-on:clickCard="showContent" v-on:previewCard="previewWork" v-for="works in designlist" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.name" :card-color="works.color"></design-card></router-link>          
+        <develop-card v-for="works in developlist" :link="works.link" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.type" :card-color="works.color"></develop-card>
+        <router-link :to="{ name: 'project', params: { worksId: project.id , directPage : true }}"><design-card v-on:clickCard="showContent" v-on:previewCard="previewWork" v-for="works in designlist" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.type" :card-color="works.color"></design-card></router-link>          
     </div>
   </div>
-  <transition name="fade">
+  <!-- <transition name="fade">
   <view-work v-bind:class="{active : isactive , hover : ishover ,leave : isleave}" v-on:clickClose="closeView" :bk-url="project.bk" :pre-txt="project.txt" :pro-text="project.category" :img-list="project.content"></view-work>
-  </transition>
+  </transition> -->
 </div>
 
 </template>
@@ -65,7 +65,7 @@ export default {
         let _id = event.target.getAttribute("id");
         this.project.id = _id;
         this.project.bk = this.designlist[this.project.id].preview;
-        this.project.txt = this.designlist[this.project.id].name;
+        this.project.txt = this.designlist[this.project.id].type;
       }else{
         this.ishover = false;
       }

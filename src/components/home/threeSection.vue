@@ -3,9 +3,9 @@
         <div class="bk-pink-b part-xl" >
             <div class="content">
                     <ul class="serif descript ">
-                        <li>Identity</li>
+                        <li>Identity design</li>
                         <li>business card</li>
-                        <li>poster</li>
+                        <li>poster design</li>
                     </ul>
                     <ul class="serif descript ">
                         <li>Web Design</li>

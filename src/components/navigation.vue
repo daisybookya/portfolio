@@ -1,6 +1,6 @@
 <template>
   <header class="is-fixed">
-    <h1 class="logo" @click="navOpen = false"><router-link to="/"><span>daisy</span> portfolio</router-link></h1>
+    <h1 class="logo" @click="navOpen = false"><router-link to="/"><span>Sunday</span> studio</router-link></h1>
     <button class="menu" @click="navOpen = !navOpen" v-bind:class="{active : navOpen}" >
         <span v-if="!navOpen"><i class="fas fa-bars fa-2x" ></i><h4>menu</h4></span>
         <span v-else><i class="fas fa-times fa-2x"></i><h4>close</h4></span>

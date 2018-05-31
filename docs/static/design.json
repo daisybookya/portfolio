@@ -1,6 +1,7 @@
 [{
     "id":"0",
     "category": "園藝植栽",
+    "type":"網頁設計",     
     "name":"web design",
     "cover":"./static/cover01-min.jpg",
     "color":"#24a46f",
@@ -10,6 +11,7 @@
   {
     "id":"1",
     "category": "餐飲",
+    "type":"網頁設計",     
     "name":"web design",
     "cover":"./static/cover02-min.jpg",
     "color":"#d28c47",
@@ -19,6 +21,7 @@
   {
     "id":"2",
     "category": "草皮生產",
+    "type":"網頁設計",     
     "name":"web design",
     "cover":"./static/cover03-min.jpg",
     "color":"#457603",
@@ -28,6 +31,7 @@
   {
     "id":"3",
     "category": "文具經銷",
+    "type":"網頁設計",     
     "name":"web design",
     "cover":"./static/cover04-min.jpg",
     "color":"#7acbcc",
@@ -37,6 +41,7 @@
   {
     "id":"4",
     "category": "牙醫診所",
+    "type":"網頁設計",     
     "name":"web design",
     "cover":"./static/cover05-min.jpg",
     "color":"#95d5f0",
@@ -46,6 +51,7 @@
   {
     "id":"5",
     "category": "甜點",
+    "type":"網頁設計/識別設計", 
     "name":"Identity/web design",
     "cover":"./static/cover06-min.jpg",
     "color":"#202020"

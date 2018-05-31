@@ -1,11 +1,11 @@
 <template>
-    <div class="works-page">
+    <div class="works-page slide-run">
         <div class="shadow"></div>
-        <div class="preview-work" :style="{backgroundImage : 'url('+project.preview+')'}"><p class="font"></p></div>
+        <div class="preview-work" :style="{backgroundImage : 'url('+project.preview+')',backgroundColor : project.color}"><p class="font"></p></div>
         <div class="height project-view">
-                <p class="font">{{project.txt}}</p>
+                <p class="font-ch">{{project.txt}}</p>
                 <p class="font-ch">產業類別 : {{project.category}}</p>
-                <button class="btn-close font" v-on:click="clickClose"><router-link :to="{ name: 'design'}"><i class="fas fa-undo fa-2x" ></i>Back</router-link></button>
+                <router-link :to="{ name: 'design'}" class="btn-close font" v-on:click="clickClose"><i class="fas fa-undo fa-2x" ></i>Back</router-link>
                 <div class="img-container">
                     <img v-for="n in project.list" :src="n" ></img>
                 </div>
@@ -23,7 +23,8 @@ export default {
                 category:'',
                 list:[],
                 preview:'',
-                txt:''
+                txt:'',
+                color:''
             }
         }
     },
@@ -44,16 +45,17 @@ export default {
             
         },
         getInfor:function(data){
-            this.project.txt = data.name;
+            this.project.txt = data.type;
             this.project.list = data.content;
             this.project.category = data.category;
             this.project.preview = data.preview;
+            this.project.color = data.color;
         },
         getPath:function(){
             let _path = this.$route.path,
                 _mainObj = document.getElementsByClassName('works-page')[0];
             if(_path.indexOf('project') > -1){
-                _mainObj.style.display = 'block';
+                //_mainObj.style.display = 'block';
                 _mainObj.classList.add('active');
             }
         }
@@ -86,7 +88,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.btn-close{
+a.btn-close{
     padding: 0;
     position: fixed;
     top: 80%;
@@ -95,23 +97,28 @@ export default {
     z-index: 80;
     font-size: 14px;
     cursor: pointer;
-    a{
+
         &:hover{
             color:rgb(0, 159, 180);
         }
-    }
+
     i{
         display: block;
         margin-bottom: 10px;
     }
 }
 .works-page{
-    display: none;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    //display: none;
     &.hover{
         display: block;
         animation: fade-in .8s;
     }
     &.active{
+        //display: block;
         .shadow{
             width: 100%;
             height: 85vh;

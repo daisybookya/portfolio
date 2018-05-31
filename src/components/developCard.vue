@@ -5,7 +5,7 @@
     </div>
     
     <div class="card-body">
-        <h6 class="font">{{ cardTitle}}</h6>
+        <h6 class="font-ch">{{ cardTitle}}</h6>
         <!-- <p class="card-text font-ch">產業類別: {{cardText}}</p> -->
     </div>
 </div>
