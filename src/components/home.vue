@@ -118,7 +118,7 @@ export default {
   
 }
 .sub-container{
-  padding-bottom: 600px;
+  padding-bottom: 300px;
 }
 
 @keyframes fade-in {

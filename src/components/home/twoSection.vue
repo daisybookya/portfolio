@@ -1,6 +1,6 @@
 <template>
     <div class="main-container" v-bind:class="{'active' : secAnimate}">
-        <div class="bk-snow part-xl" >
+        <div class="part-xl" :style="{backgroundImage : 'url('+picture+')'}">
             <div class="content">
                     <ul class="serif descript ">
                         <li>Front-end development</li>
@@ -25,6 +25,7 @@ export default {
   data:function(){
     return{
         isActive:false,
+        picture:'./static/fresh_snow.png',
     }  
   },
   props:['secAnimate'],
@@ -100,9 +101,7 @@ a.btn-more{
     transform: translateX(100px);
     transition: all .5s ease-out;
 }
-.bk-snow{
-      background: url('~/assets/fresh_snow.png'); 
-}
+
 .bk-blue{
     transition: all 1.5s ease;
     background: #033777;

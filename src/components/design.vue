@@ -1,5 +1,5 @@
 <template>
-<div class="design">
+<div class="design" :style="{backgroundImage : 'url('+picture+')'}">
   <designdefault title=projects></designdefault>
   <div class="pro-list">
     <div class="list-container">
@@ -27,6 +27,7 @@ export default {
       ishover:false,
       isactive:false,
       isleave:false,
+      picture:'./static/fresh_snow.png',
       turnOff:'',
       project:{
         id:'',
@@ -99,7 +100,7 @@ export default {
   overflow: hidden;
   position: relative;
   background: #eee;
-  background: url('../../static/fresh_snow.png'); 
+  //background: url('../../static/fresh_snow.png'); 
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5c4c6+0,d7dee3+32,d7dee3+32,d7dee3+53,c1c5cc+78,f5f7f9+100 */
 // background: rgb(197,196,198); /* Old browsers */
 // background: -moz-linear-gradient(-45deg, rgb(197,196,198) 0%, rgb(196,200,206) 0%, rgb(235,236,244) 26%, rgb(208,210,216) 66%, rgb(244,248,255) 101%); /* FF3.6-15 */

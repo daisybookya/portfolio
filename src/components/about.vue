@@ -3,7 +3,7 @@
   <designdefault title=about ></designdefault>
   <div class="main">
     <div class="container">
-        <div class="picture"></div>
+        <div class="picture" :style="{backgroundImage : 'url('+picture+')'}"></div>
         <p class="font">daisy</p>
         <p class="font">a designer and front-end developer.</p>
         <p class="font">E-mail : daisybookya@gmail.com</p>
@@ -18,7 +18,7 @@ import designdefault from './designdefault'
 export default {
   data () {
     return {
-      
+      picture:'./static/about.png',
     }
   },
   components:{
@@ -65,7 +65,7 @@ $pic : 250px;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: $pic;
-  background: url('~/../../about.png') no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 100%;
 }
