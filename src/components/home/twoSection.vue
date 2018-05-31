@@ -101,7 +101,7 @@ a.btn-more{
     transition: all .5s ease-out;
 }
 .bk-snow{
-      background: url('../../../static/fresh_snow.png'); 
+      background: url('~/assets/fresh_snow.png'); 
 }
 .bk-blue{
     transition: all 1.5s ease;
