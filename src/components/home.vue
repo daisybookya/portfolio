@@ -67,7 +67,6 @@ export default {
     isIpad:function(){
        if( /Android|webOS|Mobile|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
               this.isTouch = true;
-              console.log('true')
         }
     },
     markerVisible(name) {

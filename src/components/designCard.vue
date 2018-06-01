@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card-img-top img-container" :style="{background : cardColor}">
-        <img class="card-img-top" :src="workImg" :id="workId" :alt="cardTitle" v-on:click="clickCard" v-on:mouseover="previewCard" v-on:mouseleave="previewCard">
+        <router-link :to="{ name: 'project', params: { worksId: workId , directPage : true }}"><img class="card-img-top" :src="workImg" :id="workId" :alt="cardTitle" v-on:click="clickCard" v-on:mouseover="previewCard" v-on:mouseleave="previewCard"></router-link>
     </div>
     
     <div class="card-body">

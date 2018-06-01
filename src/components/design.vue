@@ -4,7 +4,7 @@
   <div class="pro-list">
     <div class="list-container">
         <develop-card v-for="works in developlist" :link="works.link" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.type" :card-color="works.color"></develop-card>
-        <router-link :to="{ name: 'project', params: { worksId: project.id , directPage : true }}"><design-card v-on:clickCard="showContent" v-on:previewCard="previewWork" v-for="works in designlist" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.type" :card-color="works.color"></design-card></router-link>          
+        <design-card v-on:clickCard="showContent" v-on:previewCard="previewWork" v-for="works in designlist" :key="works.id" :work-id="works.id" :work-img="works.cover" :card-title="works.type" :card-color="works.color"></design-card>        
     </div>
   </div>
   <!-- <transition name="fade">
@@ -55,9 +55,10 @@ export default {
     },
     showContent:function(event){
       this.isactive = true;
-      document.getElementsByClassName('works-page')[0].style.display = 'block';
+      //document.getElementsByClassName('works-page')[0].style.display = 'block';
       this.project.category = this.designlist[this.project.id].category;
       this.project.content = this.designlist[this.project.id].content;
+      
     },
     previewWork:function(event){
       if(!this.ishover){
@@ -70,7 +71,8 @@ export default {
         this.ishover = false;
       }
 
-    }
+    },
+
   },
   created: function () {
     var vm = this;
@@ -88,6 +90,8 @@ export default {
       .then(function (data) {
         vm.developlist = data;
       });
+
+    this.isIpad();
   }
 }
 </script>

@@ -5,12 +5,13 @@
         <div class="height project-view">
                 <p class="font-ch">{{project.txt}}</p>
                 <p class="font-ch">產業類別 : {{project.category}}</p>
-                <router-link :to="{ name: 'design'}" class="btn-close font" v-on:click="clickClose"><i class="fas fa-undo fa-2x" ></i>Back</router-link>
+                
                 <div class="img-container">
                     <img v-for="n in project.list" :src="n" ></img>
                 </div>
                 
         </div>
+        <router-link :to="{ name: 'design'}" class="btn-close font" v-on:click="clickClose"><i class="fas fa-undo fa-2x" ></i>Back</router-link>
     </div>
 </template>
 
@@ -89,10 +90,10 @@ export default {
 
 <style scoped lang="scss">
 a.btn-close{
-    padding: 0;
-    position: fixed;
-    top: 80%;
-    right: -10%;
+    padding: 0 6px;
+    position: absolute;
+    top: 85%;
+    right: 30px;
     transition: all .8s ease-in;
     z-index: 80;
     font-size: 14px;
@@ -138,9 +139,7 @@ a.btn-close{
                 
             }
         }
-        .btn-close{
-            right: 8%;
-        }
+
     }
     &.leave{
         .shadow{
@@ -267,9 +266,7 @@ a.btn-close{
             .project-view{
                 left: 1%;
             }
-            .btn-close{
-                right: 12%;
-            }
+
         }
     }
     @keyframes slideleft {
@@ -289,9 +286,16 @@ a.btn-close{
                 left: auto;
                 right: 0;
             }
-            .btn-close{
-                right: 5px;
+            a.btn-close{
+                top: 30px;
+                right: 1.5vw;
             }
+        }
+    }
+    .project-view{
+        >p{
+            padding: 5px 10%;
+            text-align: left;
         }
     }
 }
