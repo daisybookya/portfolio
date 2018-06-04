@@ -225,7 +225,7 @@ a.btn-close{
     top: -1px;
     left: -40%;
     //background: url('../assets/knit.png');
-    background:#eee;
+    background:#dedede;
     transition: all 1s linear;
     // transform: translateX(-100%);
     z-index: 50;

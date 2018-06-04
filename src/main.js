@@ -8,6 +8,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import './style/reset.scss'
 import './style/general.scss'
 
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

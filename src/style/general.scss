@@ -122,6 +122,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7c38d', end
     transform: translateY(0px);
   }
 }
+.card-body{
+  padding: 10px 15px;
+}
+.card-text{
+  color: #888;
+}
 /*---------------------------home--------------------------------*/
 .home-title{
   font-size: 3rem;

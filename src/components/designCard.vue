@@ -6,7 +6,7 @@
     
     <div class="card-body">
         <h6 class="font-ch">{{ cardTitle}}</h6>
-        <!-- <p class="card-text font-ch">產業類別: {{cardText}}</p> -->
+        <p class="card-text font">{{cardText}}</p>
     </div>
 </div>
 </template>
@@ -27,8 +27,8 @@ export default {
 
 <style scoped lang="scss">
 .card{
-  width: 28%;
-  margin: 2% 2%;
+  width: 22%;
+  margin: 2% 1%;
   float: left;
   border: 0;
   background: #fff;

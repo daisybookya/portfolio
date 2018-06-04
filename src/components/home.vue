@@ -98,6 +98,7 @@ export default {
   // height: 100vh;
   // position: relative;
   // overflow-y: scroll;
+  
 }
 .scroll-container,.ipad{
   width: 90vw;
