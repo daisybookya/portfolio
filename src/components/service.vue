@@ -32,9 +32,9 @@
             </ul></div>
           </div>
 
-        <div class="query font-ch" :class="{active : feature}">
+        <!-- <div class="query font-ch" :class="{active : feature}">
           歡迎詢問合作細節，使用<router-link to="/contact">contact填寫線上表單</router-link>或是mail到daisybookya@gmail.com，謝謝您的來信
-        </div>
+        </div> -->
 
         </div>
 

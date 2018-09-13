@@ -34,8 +34,8 @@ export default new Router({
        
     },
     {
-      path: '/service',
-      name: 'Service',
+      path: '/skills',
+      name: 'Skills',
       component:Service,
        
     },

@@ -1,6 +1,6 @@
 <template>
   <header class="is-fixed">
-    <h1 class="logo" @click="navOpen = false"><router-link to="/"><span>Sunday</span> studio</router-link></h1>
+    <h1 class="logo" @click="navOpen = false"><router-link to="/"><span>Daisy</span> portfolio</router-link></h1>
     <button class="menu" @click="navOpen = !navOpen" v-bind:class="{active : navOpen}" >
         <span v-if="!navOpen"><i class="fas fa-bars fa-2x" ></i><h4>menu</h4></span>
         <span v-else><i class="fas fa-times fa-2x"></i><h4>close</h4></span>
@@ -11,7 +11,7 @@
         <ul class="m-list" >
           <li><a href="/">Home</a></li>
           <li><a @click="navOpen = false"><router-link to="/works">Projects</router-link></a></li>
-          <li><a @click="navOpen = false"><router-link to="/service">Service</router-link></a></li>
+          <li><a @click="navOpen = false"><router-link to="/skills">Skills</router-link></a></li>
           <li><a @click="navOpen = false"><router-link to="/about">About</router-link></a></li>
           <li><a @click="navOpen = false"><router-link to="/contact">Contact</router-link></a></li>
         </ul>

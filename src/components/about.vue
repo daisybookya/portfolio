@@ -4,7 +4,7 @@
   <div class="main">
     <div class="container">
         <div class="picture" :style="{backgroundImage : 'url('+picture+')'}"></div>
-        <p class="font bold">Sunday studio</p>
+        <!-- <p class="font bold">Sunday studio</p> -->
         <p class="font">daisy,</p>
         <p class="font">a designer and front-end developer.</p>
         <p class="font">E-mail : daisybookya@gmail.com</p>

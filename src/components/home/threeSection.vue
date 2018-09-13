@@ -15,12 +15,12 @@
                         <li>Front-end development</li>
                         <li>RWD</li>
                     </ul>
-                    <router-link :to="{ name: 'Service'}" class="font btn-more"><span>MORE<i class="fas fa-long-arrow-alt-right"></i></span></router-link>
+                    <router-link :to="{ name: 'Skills'}" class="font btn-more"><span>MORE<i class="fas fa-long-arrow-alt-right"></i></span></router-link>
             </div>
             
         </div>
         <div class="bk-blue part-m" >
-             <p class="script title home-title" >service</p>
+             <p class="script title home-title" >skills</p>
              
              
         </div>
